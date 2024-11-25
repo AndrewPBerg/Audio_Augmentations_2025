@@ -36,6 +36,8 @@ from audiomentations import (
 
 )
 
+FILE_NAME = 'Phantom_Pro_4.wav'
+
 def load_wav(path):
     waveform, sample_rate = torchaudio.load(path)
     return waveform.numpy(), sample_rate
